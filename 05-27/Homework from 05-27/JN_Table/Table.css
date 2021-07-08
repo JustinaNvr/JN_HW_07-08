@@ -1,0 +1,27 @@
+
+table {
+    font-family: "Times New Roman", sans-serif;
+    border: 1px solid #c3001b;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th{
+     background: #c3001b;
+     color: white;
+ }
+
+table tbody tr:nth-child(even) {
+      background: #e0c37c;
+  }
+
+table tbody tr:nth-child(odd) {
+    background: #ffeca4;
+}
+
+tr:not(:last-child) {
+    border-top: thin solid;
+    border-bottom: thin solid;
+    padding: 7px;
+}
+

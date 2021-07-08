@@ -1,0 +1,11 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: #ECF5E4;
+    border: 25px solid #95CD8B;
+    border-right-color: #D0E6BB;
+    font: 40px/100px "Times";
+    text-align: center;
+}

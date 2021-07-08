@@ -1,0 +1,15 @@
+body{
+    background-color: #FFDEAD;
+    font-family: "Times New Roman";
+}
+div{
+    width: 400px;
+    margin: 20px 0 0 20px;
+    padding: 15px;
+    color: #B93B00;
+    border: 2px solid #FF0000;
+    background-color: #000;
+    text-align: justify;
+    text-indent: 20px;
+    opacity: 0.5;
+}
