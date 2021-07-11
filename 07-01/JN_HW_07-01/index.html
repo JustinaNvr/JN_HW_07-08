@@ -35,18 +35,18 @@
             <li>class add/remove</li>
         </ul>
         <hr>
-        <form class="mb-3 row">
-            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <form name="form1" class="mb-3 row">
+            <label for="emailAddress" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="staticEmail" placeholder="Enter Email">
+                <input name="text1" type="email" class="form-control" id="emailAddress" placeholder="Enter Email">
             </div>
         </form>
-        <form class="mb-3 row">
+        <form name="form2" class="mb-3 row">
             <label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputPhone" placeholder="Enter Phone Number">
+                <input type="text" class="form-control" id="inputPhone" placeholder="Enter Phone Number" name="text2">
                 <br>
-                <button type="button" class="btn btn-outline-dark" id="savebtn" onclick="validate()">Save</button>
+                <button type="button" class="btn btn-outline-dark" id="savebtn" onclick="email(document.form1.text1), phonenumber(document.form2.text2)">Save</button>
             </div>
         </form>
     </div>
@@ -108,12 +108,19 @@
         <h5 style="display: inline">Paspaudus mygtuką parodykite informaciją apie save modaliniame lange </h5>
         <hr>
         <div class="text-center">
-            <button type="button" class="btn btn-outline-primary" style="color: grey" id="myBtn">Launch modal</button>
+            <button type="button" class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
         </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Informacija apie mane.</p>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Informacija apie save modaliniame lange.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Informacija apie mane.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
